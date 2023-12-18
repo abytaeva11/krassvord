@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Crossword from "./component/Crossword";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const words = [
+        "Традиции",
+        "Баласагун",
+        "Усулижадид",
+        "Латиница",
+        "Расширение",
+        "Баласагуни",
+        "Курмана",
+        "Ликвидация",
+        "Латинский",
+    ];
+
+    return (
+        <div>
+            <h1>11 Лекция Кроссворд</h1>
+            <Crossword words={words} />
+
+        </div>
+    );
 }
 
 export default App;
